@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sunland-eob.pages.dev/sitemap.xml
+Sitemap: https://lin.furry-paw.net/sitemap.xml
