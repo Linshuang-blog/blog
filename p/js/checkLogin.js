@@ -20,7 +20,7 @@ async function checkLoginAndRedirect() {
       supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
-          redirectTo: 'https://sunland-eob.pages.dev/donate.html'
+          redirectTo: 'https://lin.furry-paw.net/'
         }
       })
     } else {
