@@ -161,6 +161,17 @@
     }
   </style>
 </head>
+      window.onload = function () {
+      if (!localStorage.getItem("welcomeShown")) {
+      Swal.fire({
+      title: '欢迎访问本站！',
+      text: '由霜蓝原创 ✨ 本人为二改',
+      icon: 'info',
+      confirmButtonText: '好的！'
+    });
+      localStorage.setItem("welcomeShown", "yes");
+     }
+  };
 <body>
   <div class="container">
     <img src="p/tx.jpg" alt="头像" class="avatar">
@@ -218,17 +229,6 @@
     } else {
       localStorage.setItem("isLoggedIn", "false");
     }
-      window.onload = function () {
-    if (!localStorage.getItem("welcomeShown")) {
-      Swal.fire({
-      title: '欢迎访问本站！',
-      text: '由霜蓝原创 ✨ 本人为二改',
-      icon: 'info',
-      confirmButtonText: '好的！'
-    });
-      localStorage.setItem("welcomeShown", "yes");
-     }
-  };
   </script>
  </body>
  <script src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua/js/aixin.js"></script>
