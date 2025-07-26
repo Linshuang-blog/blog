@@ -183,7 +183,7 @@
       <button id="loginRedirect" class="login-button">使用 GitHub 登录</button>
     </div>
   </div>
-
+  
   <footer>Copyright©️2024-2025凛染, All Rights Reserved.</footer>
 
   <!-- 登录逻辑脚本 -->
@@ -218,6 +218,12 @@
     } else {
       localStorage.setItem("isLoggedIn", "false");
     }
+  </script>
+    <!-- 💬 弹出欢迎提示 -->
+  <script>
+    window.onload = function () {
+      alert("🎉 欢迎来到我的博客！\n✨ 喜欢的话别忘了 Star 哦~");
+    };
   </script>
  </body>
  <script src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua/js/aixin.js"></script>
